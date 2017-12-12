@@ -42,7 +42,7 @@
 	
 	<!-- New Functions Start-->
 	<alias alias="customerReviewPlusService" name="DefaultCustomerReviewPlusService"/>
-	<bean id="DefaultCustomerReviewPlusService" class="de.hybris.platform.customerreview.impl.DefaultCustomerReviewPlusService" parent="abstractBusinessService" scope="tenant">
+	<bean id="DefaultCustomerReviewPlusService" class="de.hybris.platform.customerreview.impl.DefaultCustomerReviewPlusService" parent="DefaultCustomerReviewService" scope="tenant">
 		<property name="customerReviewDao" ref="customerReviewDao"/>
 	</bean>
 	
